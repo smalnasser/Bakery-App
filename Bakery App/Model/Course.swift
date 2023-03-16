@@ -4,7 +4,6 @@
 //
 //  Created by sarah alnasser on 23/08/1444 AH.
 //
-// eman comment
 
 import Foundation
 struct Course : Codable
@@ -14,7 +13,6 @@ struct Course : Codable
     let title : String
     let description: String
     let level: String
-  
     let start_date : Date
     let end_date : Date
     let location_name :String

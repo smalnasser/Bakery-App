@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BakePageCellTableViewCell: UITableViewCell {
+class BakePageTableViewCell: UITableViewCell {
    
    
     @IBOutlet weak var coursePic: UIImageView!

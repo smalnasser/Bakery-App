@@ -1,31 +1,59 @@
 //
-//  BakeryVC.swift
+//  ViewController.swift
 //  Bakery App
 //
 //  Created by sarah alnasser on 23/08/1444 AH.
 //
-
+ 
 import UIKit
 
-class BakeryVC: UIViewController {
+//sarah second- third
 
+class BakePageController: UIViewController {
+    
     @IBOutlet weak var tableView: UITableView!
     
+    /* let id: Int
+    let course_creator_id : Int
+    let title : String
+    let description: String
+    let level: String
+   // let image : String
+    let start_date : Date
+    let end_date : Date
+    let location_name :String
+    let location_latitude : Int
+    let location_longitude : Int*/
     let Courses : [Course] = [
         Course(id: 1, course_creator_id: 1, title: "Babka dough", description: "Babka dough", level: "Intermediate",start_date: Date(), end_date:Date(), location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic1"), Course(id: 1, course_creator_id: 1, title: "Cinnamon rolls", description: "Cinnamon rolls", level: "Beginner",start_date: Date(), end_date:Date(), location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic2"), Course(id: 1, course_creator_id: 1, title: "Japanese bread", description: "Japanese bread", level: "Advanced",start_date: Date(), end_date:Date(), location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic3"), Course(id: 1, course_creator_id: 1, title: "Banana bread", description: "Banana bread", level: "Advanced",start_date: Date(), end_date:Date(), location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic4")
     ]
+    
+    /*
+    let Courses : [Course] = [
+        Course(id: 1, course_creator_id: 1, title: "Babka dough", description: "Babka dough", level: "Intermediate",start_date: DateFormatter().date(from:"19/02/2023")!, end_date:DateFormatter().date(from:"19/02/2023")!, location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic1"), Course(id: 1, course_creator_id: 1, title: "Cinnamon rolls", description: "Cinnamon rolls", level: "Beginner",start_date: DateFormatter().date(from:"19/02/2023")!, end_date:DateFormatter().date(from:"19/02/2023")!, location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic2"), Course(id: 1, course_creator_id: 1, title: "Japanese bread", description: "Japanese bread", level: "Advanced",start_date: DateFormatter().date(from:"19/02/2023")!, end_date:DateFormatter().date(from:"19/02/2023")!, location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic3"), Course(id: 1, course_creator_id: 1, title: "Banana bread", description: "Banana bread", level: "Advanced",start_date: DateFormatter().date(from:"19/02/2023")!, end_date:DateFormatter().date(from:"19/02/2023")!, location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic4")
+    ]
+    */
+    
+    
+    
+//    @IBOutlet weak var BakePageTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+
+
+}
+
+extension BakePageController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         Courses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath) as! BakePageCellTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath) as! BakePageTableViewCell
         
         cell.coursePic.image = UIImage(named: Courses[indexPath.row].image)
         cell.courseName.text = Courses[indexPath.row].title
@@ -40,6 +68,8 @@ class BakeryVC: UIViewController {
         return cell
     }
     
+    
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
@@ -47,17 +77,12 @@ class BakeryVC: UIViewController {
         390
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "showDetails", sender: AnyObject.self)
         print("this row \(indexPath.row) is selected")
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
+    
 }
