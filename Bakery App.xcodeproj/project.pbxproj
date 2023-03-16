@@ -15,7 +15,6 @@
 		958C4E3329C2F1B2009BFE08 /* CoursesPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3229C2F1B2009BFE08 /* CoursesPageController.swift */; };
 		958C4E3529C2F97A009BFE08 /* ProfilePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */; };
 		958C4E3729C2FA99009BFE08 /* DetailsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3629C2FA99009BFE08 /* DetailsPageController.swift */; };
-		958C4E3929C2FB47009BFE08 /* BookingDetailsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3829C2FB47009BFE08 /* BookingDetailsPageController.swift */; };
 		958C4E3B29C2FDFB009BFE08 /* SignInPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3A29C2FDFB009BFE08 /* SignInPageController.swift */; };
 		95E70F0C29C1803A002C3084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70F0B29C1803A002C3084 /* AppDelegate.swift */; };
 		95E70F0E29C1803A002C3084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70F0D29C1803A002C3084 /* SceneDelegate.swift */; };
@@ -34,7 +33,6 @@
 		958C4E3229C2F1B2009BFE08 /* CoursesPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesPageController.swift; sourceTree = "<group>"; };
 		958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageController.swift; sourceTree = "<group>"; };
 		958C4E3629C2FA99009BFE08 /* DetailsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageController.swift; sourceTree = "<group>"; };
-		958C4E3829C2FB47009BFE08 /* BookingDetailsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsPageController.swift; sourceTree = "<group>"; };
 		958C4E3A29C2FDFB009BFE08 /* SignInPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageController.swift; sourceTree = "<group>"; };
 		95E70F0829C1803A002C3084 /* Bakery App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bakery App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E70F0B29C1803A002C3084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */,
 				958C4E3229C2F1B2009BFE08 /* CoursesPageController.swift */,
 				958C4E3629C2FA99009BFE08 /* DetailsPageController.swift */,
-				958C4E3829C2FB47009BFE08 /* BookingDetailsPageController.swift */,
 				958C4E3A29C2FDFB009BFE08 /* SignInPageController.swift */,
 			);
 			path = Controllers;
@@ -197,7 +194,6 @@
 				958C4E2D29C2E92D009BFE08 /* Booking.swift in Sources */,
 				958C4E3729C2FA99009BFE08 /* DetailsPageController.swift in Sources */,
 				958C4E2129C193EA009BFE08 /* Course.swift in Sources */,
-				958C4E3929C2FB47009BFE08 /* BookingDetailsPageController.swift in Sources */,
 				958C4E3529C2F97A009BFE08 /* ProfilePageController.swift in Sources */,
 				95E70F1029C1803A002C3084 /* BakePageController.swift in Sources */,
 				95E70F0C29C1803A002C3084 /* AppDelegate.swift in Sources */,
