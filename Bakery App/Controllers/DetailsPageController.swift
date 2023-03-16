@@ -6,9 +6,9 @@
 //
 
 import UIKit
+//lamya
 
 class DetailsPageController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
