@@ -78,7 +78,7 @@ extension BakePageController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "showDetails", sender: AnyObject.self)
+        performSegue(withIdentifier: "showDetails1", sender: AnyObject.self)
         print("this row \(indexPath.row) is selected")
         
     }

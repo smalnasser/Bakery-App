@@ -119,7 +119,7 @@
                     <navigationItem key="navigationItem" id="HFs-xn-jPd"/>
                     <connections>
                         <outlet property="tableView" destination="5B7-5n-4Lk" id="HkE-gR-V9r"/>
-                        <segue destination="Fa4-Ne-04k" kind="show" identifier="showDetails" id="Zck-fp-doN"/>
+                        <segue destination="Fa4-Ne-04k" kind="show" identifier="showDetails1" id="Zck-fp-doN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -147,7 +147,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2bF-cL-BAI"/>
                     <connections>
-                        <segue destination="Fa4-Ne-04k" kind="show" id="rwo-SD-0UH"/>
+                        <segue destination="Fa4-Ne-04k" kind="show" identifier="showDetails2" id="rwo-SD-0UH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zo-GP-6dQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,7 +175,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xd9-zU-g5Z"/>
                     <connections>
-                        <segue destination="Fa4-Ne-04k" kind="show" id="cpC-LV-HRd"/>
+                        <segue destination="Fa4-Ne-04k" kind="show" identifier="showDetails3" id="cpC-LV-HRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtp-nU-aJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -290,7 +290,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cpC-LV-HRd"/>
+        <segue reference="Zck-fp-doN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
