@@ -5,25 +5,57 @@
 //  Created by sarah alnasser on 24/08/1444 AH.
 //
 
+
+
+
 import UIKit
-//lamya
+import MapKit
 
-class DetailsPageController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+class ViewController: UIViewController {
     
 
-    /*
-    // MARK: - Navigation
+    
+    
+    var currentCourse: Course = Course(id: 1, course_creator_id: 1, title: "Babka dough", description: "Needless to say, you will learn new techniques,new ingredients, and new recipes when taking a baking class. Not only that, but baking also involves creating food presentations and plating.", level: "Intermediate",start_date: Date(), end_date:Date(), location_name: "Riyadh", location_latitude: 1, location_longitude: 1, image: "pic1")
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+    
+   
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet var bookbtn: UIButton!
+    @IBOutlet var Des: UILabel!
+    @IBOutlet var levellbl: UILabel!
+    @IBOutlet var imageView: UIImageView!
+  
+    
+   
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        levellbl.layer.cornerRadius = levellbl.frame.height/2
+       
+       
+       // Des.text = currentCourse.description
+        levellbl.text = currentCourse.level
+        imageView.image =  UIImage(named:currentCourse.image)
+
+
+
+        levellbl.layer.masksToBounds = true
+        levellbl.backgroundColor = UIColor(named: "lightbrown")
+
+
+        let annontation = MKPointAnnotation()
+        annontation.coordinate = CLLocationCoordinate2D(latitude:  24.8467, longitude: 46.7255)
+        mapView.addAnnotation(annontation)
+
+
+        let region = MKCoordinateRegion(center: annontation.coordinate, latitudinalMeters: 450, longitudinalMeters: 450)
+        mapView.setRegion(region, animated: true)
+
+        
+      
     }
-    */
-
 }

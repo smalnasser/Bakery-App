@@ -9,21 +9,28 @@ import UIKit
 
 class SignInPageController: UIViewController {
 
+    
+    @IBOutlet var emailTF: UITextField!
+    @IBOutlet var passTF: UITextField!
+    @IBOutlet var btn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        btn.titleLabel?.text = "Login"
 
-        // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func btnAction(_ sender: Any) {
+        
+        if emailTF.text == "123" || passTF.text == "123" {
+            dismiss(animated: true)
+            
+        }
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+

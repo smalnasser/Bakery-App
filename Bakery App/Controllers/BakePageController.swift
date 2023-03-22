@@ -66,7 +66,7 @@ class BakePageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        title = "Search"
-        navigationItem.searchController = searchcontroller
+         
         // Do any additional setup after loading the view.
         //tableView.separatorColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         tableView.separatorColor = UIColor (white: 0.95, alpha: 1)
@@ -137,11 +137,11 @@ extension BakePageController: UITableViewDataSource, UITableViewDelegate {
 //        return cell2
 //    }
     
-  /*
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails1"
         {
-            var nextScene = segue.destination as! DetailsPageController
+            var nextScene = segue.destination as! ViewController
             // Pass the selected object to the new view controller.
             
             if let indexPath = self.tableView.indexPathForSelectedRow {
@@ -150,7 +150,7 @@ extension BakePageController: UITableViewDataSource, UITableViewDelegate {
                    }
         }
     }
-  */
+
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if segue.identifier == "mySegue" {
