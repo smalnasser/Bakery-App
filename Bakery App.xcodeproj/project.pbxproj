@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		953C630429CB1CDB00BD1D9A /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953C630329CB1CDB00BD1D9A /* CourseTableViewCell.swift */; };
 		958C4E2129C193EA009BFE08 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E2029C193EA009BFE08 /* Course.swift */; };
 		958C4E2329C1A746009BFE08 /* BakePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E2229C1A746009BFE08 /* BakePageTableViewCell.swift */; };
 		958C4E2929C2E8D5009BFE08 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E2829C2E8D5009BFE08 /* Chef.swift */; };
@@ -16,6 +17,8 @@
 		958C4E3529C2F97A009BFE08 /* ProfilePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */; };
 		958C4E3729C2FA99009BFE08 /* DetailsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3629C2FA99009BFE08 /* DetailsPageController.swift */; };
 		958C4E3B29C2FDFB009BFE08 /* SignInPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958C4E3A29C2FDFB009BFE08 /* SignInPageController.swift */; };
+		95D06D7E29C69712003BF58D /* BakeDesignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D06D7D29C69712003BF58D /* BakeDesignCell.swift */; };
+		95D06D8029C6AAEE003BF58D /* UpcomingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D06D7F29C6AAEE003BF58D /* UpcomingCell.swift */; };
 		95E70F0C29C1803A002C3084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70F0B29C1803A002C3084 /* AppDelegate.swift */; };
 		95E70F0E29C1803A002C3084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70F0D29C1803A002C3084 /* SceneDelegate.swift */; };
 		95E70F1029C1803A002C3084 /* BakePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E70F0F29C1803A002C3084 /* BakePageController.swift */; };
@@ -25,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		953C630329CB1CDB00BD1D9A /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		958C4E2029C193EA009BFE08 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		958C4E2229C1A746009BFE08 /* BakePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakePageTableViewCell.swift; sourceTree = "<group>"; };
 		958C4E2829C2E8D5009BFE08 /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageController.swift; sourceTree = "<group>"; };
 		958C4E3629C2FA99009BFE08 /* DetailsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageController.swift; sourceTree = "<group>"; };
 		958C4E3A29C2FDFB009BFE08 /* SignInPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageController.swift; sourceTree = "<group>"; };
+		95D06D7D29C69712003BF58D /* BakeDesignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeDesignCell.swift; sourceTree = "<group>"; };
+		95D06D7F29C6AAEE003BF58D /* UpcomingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingCell.swift; sourceTree = "<group>"; };
 		95E70F0829C1803A002C3084 /* Bakery App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bakery App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E70F0B29C1803A002C3084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95E70F0D29C1803A002C3084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,9 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				95E70F0F29C1803A002C3084 /* BakePageController.swift */,
-				958C4E2229C1A746009BFE08 /* BakePageTableViewCell.swift */,
-				958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */,
 				958C4E3229C2F1B2009BFE08 /* CoursesPageController.swift */,
+				958C4E2229C1A746009BFE08 /* BakePageTableViewCell.swift */,
+				953C630329CB1CDB00BD1D9A /* CourseTableViewCell.swift */,
+				95D06D7F29C6AAEE003BF58D /* UpcomingCell.swift */,
+				95D06D7D29C69712003BF58D /* BakeDesignCell.swift */,
+				958C4E3429C2F97A009BFE08 /* ProfilePageController.swift */,
 				958C4E3629C2FA99009BFE08 /* DetailsPageController.swift */,
 				958C4E3A29C2FDFB009BFE08 /* SignInPageController.swift */,
 			);
@@ -196,11 +205,14 @@
 				958C4E2129C193EA009BFE08 /* Course.swift in Sources */,
 				958C4E3529C2F97A009BFE08 /* ProfilePageController.swift in Sources */,
 				95E70F1029C1803A002C3084 /* BakePageController.swift in Sources */,
+				95D06D8029C6AAEE003BF58D /* UpcomingCell.swift in Sources */,
 				95E70F0C29C1803A002C3084 /* AppDelegate.swift in Sources */,
+				95D06D7E29C69712003BF58D /* BakeDesignCell.swift in Sources */,
 				958C4E2B29C2E909009BFE08 /* User.swift in Sources */,
 				958C4E3B29C2FDFB009BFE08 /* SignInPageController.swift in Sources */,
 				958C4E2929C2E8D5009BFE08 /* Chef.swift in Sources */,
 				95E70F0E29C1803A002C3084 /* SceneDelegate.swift in Sources */,
+				953C630429CB1CDB00BD1D9A /* CourseTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
